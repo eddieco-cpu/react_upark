@@ -36,7 +36,7 @@ export default class App extends Component {
 
 
 	getParkData = ()=> {	//cors
-		axios.get('/ntpcapi/api/datasets/B1464EF0-9C7C-4A6F-ABF7-6BDF32847E68/json?page=0&size=400')	
+		axios.get('/react_upark/ntpcapi/api/datasets/B1464EF0-9C7C-4A6F-ABF7-6BDF32847E68/json?page=0&size=400')	
 			.then( (res) => {
 				this.setState({page1: res.data})
 				console.log('--- res ---', res.data);
